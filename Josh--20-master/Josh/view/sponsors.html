@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js">
+    </script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ICO" href="../assets/icons/R.ICO" />
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/event.css">
+    <title>Riviera 2020</title>
+    <!-- SEO -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Riviera 2K20">
+    <meta property="og:description"
+        content="Riviera is the Annual International Sports and Cultural Carnival of the Vellore Institute of Technology. It is an International 4-day event that consists of sports competitions, social and cultural events along with concerts.">
+    <meta property="og:url" content="riviera.com">
+    <meta property="og:site_name" content="Riviera 2K20 | VIT Biggest Event">
+    <meta property="article:publisher" content="riviera.com">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@pmsharma">
+    <meta name="twitter:title" content="Purushottam Sharma| Full Stack Developer">
+    <meta name="twitter:description"
+        content="Riviera is the Annual International Sports and Cultural Carnival of the Vellore Institute of Technology. It is an International 4-day event that consists of sports competitions, social and cultural events along with concerts.">
+    <meta name="twitter:url" content="riviera.com">
+    <meta name="author" content="Purushootam Sharma | Ananya Ganesh | Ashutosh Kaushik">
+    <meta name="description"
+        content="Riviera is the Annual International Sports and Cultural Carnival of the Vellore Institute of Technology. It is an International 4-day event that consists of sports competitions, social and cultural events along with concerts.">
+    <meta name="msapplication-TileColor" content="#0090C5">
+    <meta name="theme-color" content="#0090C5">
+    <meta name="robots" content="index, follow">
+    <!-- Cache  -->
+    <meta http-equiv="Cache-control" content="no-cache">
+
+
+
+    <style>
+        .navbar {
+            padding: 0 1rem;
+        }
+
+        ul {
+            text-align: center
+        }
+
+        .sec-one {
+            min-height: 50vh;
+            background: url("../assets/images/back3.jpeg") center center no-repeat;
+            background-size: cover;
+        }
+
+        .sec-one-cont {
+            height: auto;
+            color: white;
+        }
+
+        p {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .navbar-expand-lg {
+            background-color: #121212
+        }
+
+
+        .eventsDetails {
+            background-color: #131313;
+        }
+
+        body {
+            overflow-x: hidden;
+            font-family: montserrat;
+        }
+
+        .col-9 {
+            padding-right: 0
+        }
+
+        .btn-secondary.dropdown-toggle {
+            background-color: #0090C5 !important;
+        }
+
+        .sponserDetails {
+            background-color: #131313;
+            padding-bottom: 60px;
+        }
+
+        .cor-circle:hover {
+            transform: scale(1.1);
+        }
+
+        .cor-name,
+        .cor-circle {
+            color: white;
+            text-align: center
+        }
+        .cor-circle img{
+            max-width: 200px;
+            height: auto;
+            
+        }
+
+        /* .m10{
+            margin-top: 10px;
+        } */
+
+        .nav-link {
+            padding-right: 3px !important;
+        }
+        .navbar-nav{
+            width: 100%;
+        }
+
+        .hitimg {
+            width: auto;
+            height: 90px;
+        }
+
+        .silimg {
+            width: auto;
+            height: 70px;
+        }
+
+        @media (min-width: 780px) {
+
+
+            .x {
+                margin-left: 0;
+                color: white;
+                transform: skewX(-15deg);
+                flex-wrap: wrap;
+            }
+
+            .headings {
+                transform: skewX(15deg);
+            }
+            .sportsdetails {
+                margin-left: 22px;
+                margin-right: 22px;
+            }
+            li{
+                margin-right: 12px;
+                margin-left: 0px;
+            }
+
+            .details {
+                margin: 0 15px;
+            }
+
+            .sportsImg {
+                /* clip-path: polygon(0% 0%,100% 100%, 100% 100%, 0% 100%); */
+                background-image: url("../assets/images/sports1.png");
+            }
+        }
+
+        @media (max-width: 780px) {
+            .hellobro {
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                min-height: 10vh;
+                z-index: 1030;
+            }
+
+            .topnavwidth {
+                width: 102%;
+            }
+
+            .regbtn {
+                margin-top: -5.5px;
+            }
+
+            .sportsImg {
+                background-image: url("../assets/images/sports1.png");
+            }
+
+            .hitimg {
+                width: auto;
+                height: 70px;
+            }
+
+            .silimg {
+                width: auto;
+                height: 50px;
+            }
+
+            /* footer styles */
+            .footer-logo {
+                height: 8vh;
+                width: auto;
+                margin-left: 10px;
+            }
+
+            .rb {
+                border-right: 0 !important;
+            }
+        }
+
+        /* Contact Us styles */
+        .contact-us {
+            background-color: #282828;
+        }
+
+        .footer-icons {
+            color: white;
+            transform: scale(2);
+            margin-left: 40px;
+            margin-top: 7px;
+        }
+
+        .footer-logo {
+            height: 15vh;
+            width: auto;
+        }
+
+        .content p {
+            color: white;
+            font-size: 16px
+        }
+        .footerdeet{
+            padding-left: 120px;
+        }
+        @media(max-width: 575px) {
+            .footerdeet{
+            padding-left: 50px;
+        } 
+        .footer-logo{
+            height: 12vh;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 45vh;border-bottom: 4px solid #0090C5;" class="sec-one">
+        <div style="position : relative ; ">
+            <div class="container topnavwidth" style="position: absolute; left : 0; transform : translateX(-2%)">
+                <div class="x">
+                    <!--Navbar-->
+                    <nav class="navbar navbar-expand-lg navbar-dark hellobro">
+
+                        <!-- Navbar brand -->
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+                        <!-- Collapse button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Collapsible content -->
+                        <div class="nav-desk collapse navbar-collapse" id="basicExampleNav">
+
+                            <!-- Links -->
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">
+                                        <p class="headings m10">Home</p>
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./events.html">
+                                        <p class="headings m10">Events</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./sports.html">
+                                        <p class="headings m10">Sports</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./proshow.html">
+                                        <p class="headings m10">Proshows</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./teamriviera.html">
+                                        <p class="headings">Patrons</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./ambassador.html">
+                                        <p class="headings">Campus Ambassador</p>
+                                    </a>
+                                </li>
+                                <li style="background-color: #0090C5;color: white" class="nav-item">
+                                    <a class="nav-link" href="./sponsors.html">
+                                        <p style=" color: white;padding-right: 7px;" class="headings">Sponsors &
+                                            Partners</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./devorg.html">
+                                        <p class="headings ">Developers and Organizers</p>
+                                    </a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="./infusion.html">
+                                        <p class="headings m10">Infusion</p>
+                                    </a>
+                                </li> -->
+
+                            </ul>
+
+                        </div>
+                        <!-- Collapsible content -->
+
+                    </nav>
+
+                    <!--/.Navbar-->
+
+
+                </div>
+
+
+            </div>
+            <div style="float: right;">
+                <button
+                    style="transform :scale(0.75); border: 2px solid #FFFFFF;color: #FFFFFF;border-radius: 32px;margin-top: 10px;"
+                    type="button" class="btn regbtn btn-primary-outline" data-toggle="modal"
+                    onclick="window.location.href = './proshow.html'">Register</button>
+            </div>
+        </div>
+        <div style="margin: auto auto;color:white;text-align: center;width: 100%;">
+            <div style="margin: auto auto; padding-top : 150px ">
+                <div>
+                    <h1 style="cursor: default; user-select: none;"><span>Sponsors</span></h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Reg Modal -->
+    <div class="modal fade" id="reg" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div> -->
+                <div class="modal-body">
+                    <p>Registrations will open soon! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid sponserDetails">
+        <div class="row" style="text-align : center">
+            <div style="margin: 100px auto 0;">
+                <p
+                    style="font-size : 30px; color :white; text-align: center;margin:auto auto;border-bottom: 2px solid #0090C5;">
+                    Title Sponsor
+                </p>
+            </div>
+        </div>
+        <div class="row" style="text-align: center; height : auto">
+
+            <div class="col-12">
+                <div class="cor-circle">
+                    <img src="../assets/images/pepsi.png" style="height : 180px; width : auto; ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Case Partners -->
+    <div class="container-fluid sponserDetails">
+
+        <div class="row" style="margin : 0 5vw; background: #131313; text-align : center;">
+            <div style="margin:10px auto 20px;">
+                <p
+                    style="font-size : 30px; color :white;text-align: center;margin:auto auto;border-bottom: 2px solid #0090C5; ">
+                    Partners    
+                </p>
+            </div>
+        </div>
+        <div class="row" style="text-align: center; height : auto;">
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/1200px-Reliance_Industries_Logo.svg.png" style=" height: 150px; width : auto">
+                </div>
+                <!-- <div class="cor-name">
+                    Maruti Suzuki
+                </div> -->
+            </div>
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/580b57fcd9996e24bc43c536.png" style=" width : auto">
+                </div>
+                <!-- <div class="cor-name">
+                    Ferns N` Petals
+                </div> -->
+
+            </div>
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+
+
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/City_Union_Bank.svg_.png" style="height:150px; width : auto">
+                </div>
+                <!-- <div class="cor-name">
+                    Silly Monks
+                </div> -->
+
+            </div>
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+
+
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/hindu.jpg" class="silimg">
+                </div>
+                <!-- <div class="cor-name">
+                    Talent 2 Success
+                </div> -->
+
+            </div>
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+
+
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/indian-bank-logo.png" class="hitimg">
+                </div>
+                <!-- <div class="cor-name">
+                    Hitachi
+                </div> -->
+
+            </div>
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+
+
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/Karur_Vysya_Bank...jpg" style="height : 150px; width : auto">
+                </div>
+                <!-- <div class="cor-name">
+                    Asian Paints
+                </div> -->
+
+            </div>
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+
+
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/KIA_logo2.svg.png" style="height : 150px; width : auto">
+                </div>
+                <!-- <div class="cor-name">
+                    Jet Airways
+                </div> -->
+
+            </div>
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+
+
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/Magoosh-Logo_purple-525x1151.png" style="height : 150px; width : auto">
+                </div>
+                <!-- <div class="cor-name">
+                    Cloud Clothing
+                </div> -->
+
+            </div>
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+
+
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/maxresdefault.jpg" style="height : 100px; width : auto">
+                </div>
+                <!-- <div class="cor-name">
+                    Internshala
+                </div> -->
+
+            </div>
+            <div class="col-12 col-lg-3" style="margin-top : 20px; margin-bottom : 20px;">
+
+
+                <div class="cor-circle">
+                    <img src="../assets/newspon/Partners/Pearson_logo_logotype_emblem_symbol_vertical.png" style="height : 150px; width : auto">
+                </div>
+                <!-- <div class="cor-name">
+                    Viacom 18
+                </div> -->
+
+            </div>
+            
+
+        </div>
+
+    </div>
+    <!-- Footer -->
+
+    <div class="contact-us" style="padding-bottom: 80px;">
+        <div class="container-fluid">
+            <div class="row" style="text-align: center">
+                <p
+                    style="text-align: center;margin:20px auto 0;;border-bottom: 2px solid #0090C5;color:white;font-size: 40px">
+                    Contact Us</p><br>
+            </div>
+        </div>
+        <div class="container-fluid" style="padding-top: 70px;">
+            <div class="row">
+                <div class="col-12 col-lg-6 rb"
+                    style="display: flex; justify-content: center;border-right: 1px solid #0090C5; margin-bottom: 20px;">
+                    <img src="../assets/images/logo.png" class="footer-logo">
+                </div>
+                <div class="col-12 col-lg-6 footerdeet">
+                    <div class="row">
+                        <div class="col-3 col-lg-2">
+                            <i class="fas fa-map-marker-alt footer-icons"></i>
+                        </div>
+                        <div class="col-9 col-lg-8">
+                            <div class="content">
+                                <p>Vellore Institute of Technology</p>
+                                <p>Vellore Campus</p>
+                                <p>Vellore - 632014</p>
+                                <p>TamilNadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 30px;">
+                        <div class="col-3 col-lg-2">
+                            <i class="far fa-envelope footer-icons"></i>
+                        </div>
+                        <div class="col-9 col-lg-8 content">
+                            <a style="color: white;" href="mailto:design.riviera@vit.ac.in">design.riviera@vit.ac.in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
