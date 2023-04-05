@@ -381,3 +381,62 @@ h5 {
 
 
 /* Register button animation */
+
+
+
+.mtop{
+    margin-top: 8vw;
+}
+
+
+
+
+.btn1 {
+    padding: 0 20px;
+    height: 50px;
+    margin: 0;
+    background-size: 100%;
+    background-image: linear-gradient(#f12c51, #e11b41);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+    border: 0;
+    color: #FFF;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+  }
+  .btn1 span{
+    z-index:10;
+    position:relative;
+  }
+  
+  .btn--glow {
+    position:relative;
+    overflow:hidden;
+  }
+  
+  .btn--glow:before{
+    content:'';
+    position: absolute;
+    left: -20%;
+    top:-10%;
+    width: 0;
+    height: 100%;
+    transform: rotate(15deg) scale(1, 2);
+    box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.7);
+    animation: button-glow 3000ms ease-in-out infinite;
+  }
+  
+  @keyframes button-glow {
+    0% {
+      left: -20%;
+    }
+    50% {
+      left: 120%;
+    }
+    100% {
+      left: 120%;
+    }
+  }
+  
