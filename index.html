@@ -60,293 +60,8 @@
     <!-- <meta http-equiv="Cache-control" content="no-cache"> -->
     <link rel="manifest" href="manifest.json">
 
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/swr.js')
-                .then(function () {
-                    console.log('Service Worker Registered');
-                });
-        }
-    </script>
-    <style>
-        body {
-            font-family: montserrat;
-        }
-
-        #preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #111111;
-            z-index: 99;
-        }
-
-        #status {
-            width: 25vw;
-            height: auto;
-            position: absolute;
-            left: 37%;
-            top: 40%;
-
-        }
-        #status img{
-            width: 100%;
-            height: 100%;
-        }
-
-        #riviera-loading {
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            left: 50%;
-            top: 45%;
-            font-size: 32px;
-            font-weight: 600;
-        }
-
-
-
-
-
-
-        /* .navbar-nav>.active>a {
-            color: aqua;
-            background-color: chartreuse;
-        }
-
-        .nav-item>a:hover {
-            color: aqua;
-        } */
-        /* body{
-            font-family: 'Montserrat';
-        } */
-        .navbar-nav {
-            padding: 10px
-        }
-
-        .nav-link {
-            padding-right: 1px !important;
-            padding-left: 1px !important;
-        }
-
-        ul {
-            text-align: center
-        }
-
-        .sec-one {
-            background: url("./assets/images/backstage.jpg") center center no-repeat;
-            background-size: cover;
-        }
-
-        .sec-one-cont {
-            height: auto;
-            color: white;
-        }
-
-        p {
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-        .navbar-expand-lg {
-            background-color: #121212;
-        }
-
-        /* body {
-            overflow: hidden
-        } */
-        .navbar-nav {
-            width: 100%;
-        }
-
-        .regbtn:hover {
-            transform: scale(1.1);
-        }
-
-        .content p {
-            color: white;
-            font-size: 16px
-        }
-
-        .card-title {
-            text-align: center;
-            color: white
-        }
-
-        .card-body {
-            background-color: #282828
-        }
-
-        h5 {
-            color: white
-        }
-
-        .cardsTop {
-            margin-bottom: 20px;
-            /* background-color: #282828; */
-        }
-
-        .card {
-            background-color: #282828;
-        }
-
-        /* .m10{
-            margin-top: 10px;
-        } */
-
-        /* Contact Us styles */
-        .contact-us {
-            background-color: #282828;
-        }
-
-        .footer-icons {
-            color: white;
-            transform: scale(2);
-            margin-left: 40px;
-            margin-top: 7px;
-        }
-
-        .footer-logo {
-            height: 15vh;
-            width: auto;
-        }
-
-        @media(min-width: 780px) and (max-width: 1200px) {
-            .nav-item {
-                padding-left: 7px;
-                padding-right: 6px;
-            }
-
-            /* .headings{
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            } */
-        }
-
-        @media(min-width: 1200px) {
-            li {
-                padding-left: 10px;
-                padding-right: 6px;
-            }
-        }
-
-        @media (min-width: 780px) {
-            /* .nav-desk {
-                height: 50px;
-            } */
-
-            .x {
-                margin-left: 0;
-                color: white;
-                transform: skewX(-15deg);
-                flex-wrap: wrap;
-            }
-
-            .headings {
-                transform: skewX(15deg);
-            }
-
-            .mainInfo {
-                margin: 0 5vw;
-            }
-
-            .moreInfoBtn {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%)
-            }
-        }
-
-        @media (max-width: 780px) {
-            .riviera-logo {
-                height: 100px;
-            }
-
-            .landing-heading {
-                height: 15px;
-            }
-
-            .hellobro {
-                position: fixed;
-                top: 0;
-                right: 0;
-                left: 0;
-                z-index: 1030;
-                min-height: 8vh;
-            }
-
-            .footer-logo {
-                height: 8vh;
-                width: auto;
-                margin-left: 10px;
-            }
-
-            .rb {
-                border-right: 0 !important;
-            }
-
-            /* #status {
-                left: 15%;
-            } */
-
-            #riviera-loading {
-                left: 40%;
-            }
-        }
-
-        .footerdeet {
-            padding-left: 120px;
-        }
-
-        @media(max-width: 575px) {
-            .footerdeet {
-                padding-left: 50px;
-            }
-
-            .footer-logo {
-                height: 12vh;
-            }
-
-            /* #status {
-                left: 7%;
-            } */
-
-            #riviera-loading {
-                left: 32%;
-            }
-        }
-        @media only screen and (device-width: 768px) {
-          #status{
-              left: 25%;
-          }
-          #riviera-loading{
-              left: 40%;
-          }
-        }
-  
-        /* custom styles */
-
-        .NavUpdate{
-            display: flex;
-            justify-content: space-around;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-    </style>
+   <link rel="stylesheet" href="./css/index.css">
+    
 </head>
 
 <body>
@@ -417,15 +132,24 @@
 
         <div style="margin: auto auto;position:relative;color:white;text-align: center;height: 100vh;">
             <div style="margin: auto auto;position: absolute;top: 45%;left:50%;transform: translate(-50%,-50%);">
-                <img height="150px" src="./assets/images/joshLogo.png" class="riviera-logo" /><br><br>
+                <!-- <img height="150px" src="./assets/images/joshLogo.png" class="riviera-logo" /><br><br> -->
+
+                <div class="main">
+                    <span class="webdev">Josh 2k23</span>
+                    <span class="socod">20th to 21st April</span>
+                  </div>
 
                 <!-- <img height="30px" src="./assets/images/landingheading.svg" class="landing-heading" /><br> -->
                 
-                <div style="font-weight: 800; margin-top: 10px; font-size: 20px;cursor: default; user-select: none;">
-                    20th - 21st April</div>
+                <!-- <div style="font-weight: 800; margin-top: 10px; font-size: 20px;cursor: default; user-select: none;">
+                    20th - 21st April</div> -->
+              
+                    
                 <button style="border: 2px solid #FFFFFF;color: white;border-radius: 6px" type="button"
-                    class="btn btn-primary-outline" data-toggle="modal"
-                    onclick="window.location.href = '#'">Register</button>
+                    class="btn btn-primary-outline  " data-toggle="modal"
+                    onclick="window.location.href = '#'">Register Now</button> 
+
+                  
             </div>
         </div>
 
