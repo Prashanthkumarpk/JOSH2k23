@@ -59,7 +59,7 @@ ul {
 }
 
 .sec-one {
-  background: url("../assets/images/BackgroundMain.jpg") center center no-repeat;
+  background: url("../assets/images/backstage.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -305,10 +305,8 @@ h5 {
   will-change: opacity;
 }
 .main .webdev {
-  color: #ffd9e2;
-  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c,
-    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c,
-    0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+  color: #ffffff;
+    text-shadow: 0 0 0 transparent, 0 0 10px #FFD700, 0 0 20px #ffc107, 0 0 40px #FFD700, 0 0 100px #FFD700, 0 0 200px #FFD700, 0 0 300px #FFD700, 0 0 500px #FFD700, 0 0 1000px #FFD700;
   -webkit-animation: blink 2s infinite alternate;
   animation: blink 2s infinite alternate;
 }
